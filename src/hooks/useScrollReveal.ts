@@ -7,6 +7,9 @@ export function useScrollReveal<T extends HTMLElement>() {
     const el = ref.current
     if (!el) return
 
+    // Check reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -15,15 +18,21 @@ export function useScrollReveal<T extends HTMLElement>() {
           observer.disconnect()
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.08 }
     )
 
-    el.style.opacity = '0'
-    el.style.transform = 'translateY(32px)'
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
+    // Set initial state after a tick so content is visible without JS
+    const raf = requestAnimationFrame(() => {
+      el.style.opacity = '0'
+      el.style.transform = 'translateY(24px)'
+      el.style.transition = 'opacity 0.55s ease, transform 0.55s ease'
+      observer.observe(el)
+    })
 
-    observer.observe(el)
-    return () => observer.disconnect()
+    return () => {
+      cancelAnimationFrame(raf)
+      observer.disconnect()
+    }
   }, [])
 
   return ref

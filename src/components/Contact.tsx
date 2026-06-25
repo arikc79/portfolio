@@ -11,21 +11,11 @@ export default function Contact() {
   const ref = useScrollReveal<HTMLDivElement>()
 
   return (
-    <section id="contact" style={{
-      padding: '7rem 4rem',
+    <section id="contact" className="section-padding" style={{
       backgroundColor: 'var(--color-surface)',
       borderTop: '1px solid var(--color-border)',
     }}>
       <div ref={ref} style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-        <p style={{
-          fontFamily: 'var(--font-mono)',
-          fontSize: '13px',
-          color: 'var(--color-accent)',
-          marginBottom: '1rem',
-          letterSpacing: '0.1em',
-        }}>
-          04. Contact
-        </p>
         <h2 style={{
           fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
           fontWeight: 700,
@@ -67,7 +57,7 @@ export default function Contact() {
                 e.currentTarget.style.background = 'transparent'
               }}
             >
-              <span style={{ color: 'var(--color-muted)', fontSize: '13px', width: '70px', textAlign: 'left' }}>
+              <span style={{ color: 'var(--color-muted)', fontSize: '13px', width: '70px', textAlign: 'left', flexShrink: 0 }}>
                 {l.label}
               </span>
               <span style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--color-text)' }}>
@@ -77,11 +67,9 @@ export default function Contact() {
           ))}
         </div>
 
-        <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+        <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <span style={{
-            padding: '4px 12px',
-            borderRadius: '20px',
-            fontSize: '12px',
+            padding: '4px 12px', borderRadius: '20px', fontSize: '12px',
             fontFamily: 'var(--font-mono)',
             backgroundColor: 'rgba(52,211,153,0.1)',
             color: '#34d399',
@@ -90,9 +78,7 @@ export default function Contact() {
             ● open to work
           </span>
           <span style={{
-            padding: '4px 12px',
-            borderRadius: '20px',
-            fontSize: '12px',
+            padding: '4px 12px', borderRadius: '20px', fontSize: '12px',
             fontFamily: 'var(--font-mono)',
             backgroundColor: 'rgba(124,106,255,0.1)',
             color: 'var(--color-accent)',
@@ -104,11 +90,8 @@ export default function Contact() {
       </div>
 
       <p style={{
-        textAlign: 'center',
-        marginTop: '5rem',
-        fontFamily: 'var(--font-mono)',
-        fontSize: '12px',
-        color: 'var(--color-muted)',
+        textAlign: 'center', marginTop: '5rem',
+        fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-muted)',
       }}>
         Тарас Арапов · Built with React + Vite · {new Date().getFullYear()}
       </p>

@@ -6,17 +6,8 @@ export default function Projects() {
   const ref = useScrollReveal<HTMLDivElement>()
 
   return (
-    <section id="projects" style={{ padding: '7rem 4rem' }}>
+    <section id="projects" className="section-padding">
       <div ref={ref} style={{ maxWidth: '900px', margin: '0 auto' }}>
-        <p style={{
-          fontFamily: 'var(--font-mono)',
-          fontSize: '13px',
-          color: 'var(--color-accent)',
-          marginBottom: '1rem',
-          letterSpacing: '0.1em',
-        }}>
-          03. Projects
-        </p>
         <h2 style={{
           fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
           fontWeight: 700,
@@ -26,7 +17,7 @@ export default function Projects() {
           Що я будував
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+        <div className="projects-grid">
           {projects.map((p) => (
             <ProjectCard key={p.title} project={p} />
           ))}
@@ -53,14 +44,13 @@ function ProjectCard({ project }: { project: typeof projects[number] }) {
         gap: '1rem',
         transition: 'border-color 0.25s, transform 0.25s',
         transform: hovered ? 'translateY(-3px)' : 'translateY(0)',
-        cursor: 'default',
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <h3 style={{ color: 'var(--color-text)', fontWeight: 700, fontSize: '1.1rem' }}>
           {project.title}
         </h3>
-        <div style={{ display: 'flex', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', gap: '0.75rem', flexShrink: 0, marginLeft: '1rem' }}>
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer"
               style={{ color: 'var(--color-muted)', fontSize: '13px', fontFamily: 'var(--font-mono)', textDecoration: 'none' }}

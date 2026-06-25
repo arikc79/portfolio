@@ -4,19 +4,9 @@ export default function About() {
   const ref = useScrollReveal<HTMLDivElement>()
 
   return (
-    <section id="about" style={{ padding: '7rem 4rem' }}>
+    <section id="about" className="section-padding">
       <div ref={ref} style={{ maxWidth: '900px', margin: '0 auto' }}>
-        <p style={{
-          fontFamily: 'var(--font-mono)',
-          fontSize: '13px',
-          color: 'var(--color-accent)',
-          marginBottom: '1rem',
-          letterSpacing: '0.1em',
-        }}>
-          01. About
-        </p>
-
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="about-grid">
           <div>
             <h2 style={{
               fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
@@ -24,7 +14,8 @@ export default function About() {
               color: 'var(--color-text)',
               marginBottom: '1.5rem',
               lineHeight: 1.2,
-            }}>
+              textWrap: 'balance',
+            } as React.CSSProperties}>
               Привіт, я Тарас.
             </h2>
             <p style={{ color: 'var(--color-muted)', lineHeight: 1.8, marginBottom: '1rem' }}>
@@ -51,18 +42,14 @@ export default function About() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: 'var(--color-muted)',
-            fontFamily: 'var(--font-mono)',
-            fontSize: '13px',
             position: 'relative',
             overflow: 'hidden',
           }}>
             <div style={{
-              position: 'absolute',
-              top: 0, left: 0, right: 0, bottom: 0,
+              position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
               background: 'radial-gradient(circle at 30% 30%, rgba(124,106,255,0.15), transparent 60%)',
             }} />
-            <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', lineHeight: 2 }}>
+            <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', lineHeight: 2, fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--color-muted)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>👨‍💻</div>
               <div>Вінниця, Україна</div>
               <div style={{ color: 'var(--color-accent)', marginTop: '0.25rem' }}>open to work</div>
