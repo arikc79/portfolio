@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: 'energy-ses',
     description:
-      'Застосунок для обліку виробництва сонячної електростанції: щомісячні показники, розрахунок заробітку, графіки динаміки, PDF-акти. Реальні дані, локальна SQLite БД.',
+      'Застосунок для обліку виробництва сонячної електростанції: введення щомісячних показників, автоматичний розрахунок заробітку за зеленим тарифом, експорт/імпорт БД. Реальні дані, SQLite.',
     stack: ['Python', 'tkinter', 'SQLite', 'Matplotlib', 'Pillow'],
     github: 'https://github.com/arikc79/energy-ses-arapova',
     live: 'https://github.com/arikc79/energy-ses-arapova/releases/tag/v1.0',
