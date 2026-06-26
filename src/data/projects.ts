@@ -42,6 +42,7 @@ export const projects: Project[] = [
       'WPF десктоп-застосунок для розрахунку вартості вікон ПВХ: мультивіконний інтерфейс, ролі користувачів, хешування паролів, аудит-лог дій, звіти. SQLite через ADO.NET.',
     stack: ['C#', 'WPF', '.NET 9', 'SQLite', 'ADO.NET', 'XAML'],
     github: 'https://github.com/arikc79/WinCalc',
+    live: 'https://github.com/arikc79/WinCalc/releases/tag/v1.0',
   },
   {
     title: 'energy-ses',
