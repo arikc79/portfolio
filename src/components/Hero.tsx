@@ -130,7 +130,7 @@ export default function Hero() {
             <div><span style={{ color: '#34d399' }}>frontend</span>: [<span style={{ color: '#fbbf24' }}>'React'</span>, <span style={{ color: '#fbbf24' }}>'Vue.js'</span>, <span style={{ color: '#fbbf24' }}>'TypeScript'</span>],</div>
             <div><span style={{ color: '#34d399' }}>database</span>: [<span style={{ color: '#fbbf24' }}>'PostgreSQL'</span>, <span style={{ color: '#fbbf24' }}>'MSSQL'</span>],</div>
             <div><span style={{ color: '#34d399' }}>deploy</span>: [<span style={{ color: '#fbbf24' }}>'Render'</span>, <span style={{ color: '#fbbf24' }}>'Vercel'</span>, <span style={{ color: '#fbbf24' }}>'Azure'</span>],</div>
-            <div><span style={{ color: '#34d399' }}>coffee</span>: <span style={{ color: '#f87171' }}>Infinity</span>,</div>
+            <div><span style={{ color: '#34d399' }}>status</span>: <span style={{ color: '#34d399' }}>'open to work'</span>,</div>
           </div>
           <div>{'}'}</div>
           <div style={{ marginTop: '1rem' }}>
@@ -139,31 +139,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        style={{
-          position: 'absolute',
-          bottom: '2rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.5rem',
-          color: 'var(--color-muted)',
-          fontSize: '12px',
-          fontFamily: 'var(--font-mono)',
-        }}
-      >
-        scroll
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-          style={{ width: '1px', height: '32px', backgroundColor: 'var(--color-border)' }}
-        />
-      </motion.div>
     </section>
   )
 }

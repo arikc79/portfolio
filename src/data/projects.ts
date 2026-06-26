@@ -10,8 +10,8 @@ export const projects: Project[] = [
   {
     title: 'VAREL Style — сайт',
     description:
-      'E-commerce магазин чоловічого одягу: каталог товарів, кошик, оформлення замовлень, адмінпанель. Автоматизація через Make.com webhooks. Задеплоєно на Render.',
-    stack: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Supabase', 'JavaScript'],
+      'E-commerce магазин чоловічого одягу: каталог товарів, оформлення замовлень, адмінпанель із дашбордом продажів і CRM клієнтів. Email-сповіщення через Resend API, Telegram-бот, Cloudinary для медіа. Задеплоєно на Render.',
+    stack: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Cloudinary', 'JavaScript'],
     github: 'https://github.com/arikc79/varel-style',
     live: 'https://varel-style.onrender.com/',
   },
@@ -25,8 +25,8 @@ export const projects: Project[] = [
   {
     title: 'MusicPortal.Api',
     description:
-      'Full-stack музичний портал: REST API на ASP.NET Core з JWT-аутентифікацією, React-адмінпанель для керування піснями, жанрами та користувачами. EF Core + PostgreSQL.',
-    stack: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'Entity Framework', 'PostgreSQL', 'JWT'],
+      'Full-stack музичний портал: REST API на ASP.NET Core з JWT-аутентифікацією та SHA-256 хешуванням паролів. Адмінпанель на React + Material UI з CRUD пісень/жанрів/користувачів, TanStack Query для стейту, мультимовний інтерфейс (UA/EN).',
+    stack: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'Material UI', 'MS SQL Server', 'JWT', 'TanStack Query'],
     github: 'https://github.com/arikc79/MusicPortal.Api',
   },
   {
