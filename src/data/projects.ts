@@ -9,26 +9,44 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'VAREL Style',
-    description: 'E-commerce магазин чоловічого одягу: каталог, замовлення, адмінпанель. Автоматизація через Make.com webhooks.',
-    stack: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Supabase', 'Vercel'],
-    github: 'https://github.com/arikc79/varel-style',
-    live: 'https://varel-style.onrender.com/',
+    description:
+      'Мобільний React-застосунок чоловічого одягу: каталог з фільтрами, кошик із варіантами розмір/колір, оформлення замовлення, VAREL CLUB форма. Аутентифікація та БД через Supabase.',
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'React Query'],
+    github: 'https://github.com/arikc79/varel-style-app',
   },
   {
     title: 'MusicPortal.Api',
-    description: 'Full-stack музичний портал: REST API на C# + адмінпанель на Vue.js з Entity Framework Migrations.',
-    stack: ['C#', 'ASP.NET Core', 'Vue.js', 'TypeScript', 'Entity Framework'],
+    description:
+      'Full-stack музичний портал: REST API на ASP.NET Core з JWT-аутентифікацією, React-адмінпанель для керування піснями, жанрами та користувачами. EF Core + PostgreSQL.',
+    stack: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'Entity Framework', 'PostgreSQL', 'JWT'],
     github: 'https://github.com/arikc79/MusicPortal.Api',
   },
   {
+    title: 'MovieSearch',
+    description:
+      'ASP.NET Core MVC застосунок: пошук фільмів через OMDb API з модальними деталями, власна БД із CRUD-операціями та завантаженням постерів. SQLite.',
+    stack: ['C#', 'ASP.NET Core MVC', 'SQLite', 'Entity Framework', 'Bootstrap'],
+    github: 'https://github.com/arikc79/MovieSearch',
+  },
+  {
     title: 'Kinopoisk SPA',
-    description: 'Frontend SPA для перегляду фільмів на React + TypeScript. Налаштований ESLint з type-aware правилами.',
-    stack: ['React', 'TypeScript', 'Vite', 'ESLint'],
+    description:
+      'Single-page застосунок для пошуку фільмів через OMDb API. React Query для кешування запитів, MUI для UI, повна типізація через TypeScript.',
+    stack: ['React', 'TypeScript', 'Vite', 'MUI', 'React Query', 'Axios'],
     github: 'https://github.com/arikc79/kinopoisk',
   },
   {
-    title: 'EcoSorterAPI',
-    description: 'REST API для ML-класифікації матеріалів. AutoML-модель навчена на датасеті Kaggle, інтеграція Azure Custom Vision.',
-    stack: ['C#', 'ASP.NET Core', 'Microsoft.ML', 'Azure', 'Swagger'],
+    title: 'WinCalc',
+    description:
+      'WPF десктоп-застосунок для розрахунку вартості вікон ПВХ: мультивіконний інтерфейс, ролі користувачів, хешування паролів, аудит-лог дій, звіти. SQLite через ADO.NET.',
+    stack: ['C#', 'WPF', '.NET 9', 'SQLite', 'ADO.NET', 'XAML'],
+    github: 'https://github.com/arikc79/WinCalc',
+  },
+  {
+    title: 'energy-ses',
+    description:
+      'Python-застосунок для обліку виробництва сонячної електростанції: введення щомісячних показників, розрахунок заробітку, графіки динаміки, PDF-акти. tkinter + SQLite.',
+    stack: ['Python', 'tkinter', 'SQLite', 'Matplotlib', 'Pillow'],
+    github: 'https://github.com/arikc79/energy-ses-arapova',
   },
 ]
