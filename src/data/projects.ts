@@ -8,9 +8,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'VAREL Style',
+    title: 'VAREL Style — сайт',
     description:
-      'Мобільний React-застосунок чоловічого одягу: каталог з фільтрами, кошик із варіантами розмір/колір, оформлення замовлення, VAREL CLUB форма. Аутентифікація та БД через Supabase.',
+      'E-commerce магазин чоловічого одягу: каталог товарів, кошик, оформлення замовлень, адмінпанель. Автоматизація через Make.com webhooks. Задеплоєно на Render.',
+    stack: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Supabase', 'JavaScript'],
+    github: 'https://github.com/arikc79/varel-style',
+    live: 'https://varel-style.onrender.com/',
+  },
+  {
+    title: 'VAREL Style — мобільний застосунок',
+    description:
+      'React мобільний застосунок магазину: каталог з фільтрами, кошик із варіантами розмір/колір, оформлення замовлення, VAREL CLUB форма. Аутентифікація та БД через Supabase.',
     stack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'React Query'],
     github: 'https://github.com/arikc79/varel-style-app',
   },
@@ -24,16 +32,9 @@ export const projects: Project[] = [
   {
     title: 'MovieSearch',
     description:
-      'ASP.NET Core MVC застосунок: пошук фільмів через OMDb API з модальними деталями, власна БД із CRUD-операціями та завантаженням постерів. SQLite.',
-    stack: ['C#', 'ASP.NET Core MVC', 'SQLite', 'Entity Framework', 'Bootstrap'],
+      'ASP.NET Core MVC застосунок: пошук фільмів через OMDb API з модальними деталями, власна БД із повним CRUD та завантаженням постерів. SQLite, готовий до деплою на Render.',
+    stack: ['C#', 'ASP.NET Core MVC', 'SQLite', 'Entity Framework', 'Bootstrap', 'Docker'],
     github: 'https://github.com/arikc79/MovieSearch',
-  },
-  {
-    title: 'Kinopoisk SPA',
-    description:
-      'Single-page застосунок для пошуку фільмів через OMDb API. React Query для кешування запитів, MUI для UI, повна типізація через TypeScript.',
-    stack: ['React', 'TypeScript', 'Vite', 'MUI', 'React Query', 'Axios'],
-    github: 'https://github.com/arikc79/kinopoisk',
   },
   {
     title: 'WinCalc',
@@ -45,7 +46,7 @@ export const projects: Project[] = [
   {
     title: 'energy-ses',
     description:
-      'Python-застосунок для обліку виробництва сонячної електростанції: введення щомісячних показників, розрахунок заробітку, графіки динаміки, PDF-акти. tkinter + SQLite.',
+      'Застосунок для обліку виробництва сонячної електростанції: щомісячні показники, розрахунок заробітку, графіки динаміки, PDF-акти. Реальні дані, локальна SQLite БД.',
     stack: ['Python', 'tkinter', 'SQLite', 'Matplotlib', 'Pillow'],
     github: 'https://github.com/arikc79/energy-ses-arapova',
   },
