@@ -31,11 +31,11 @@ export const projects: Project[] = [
     github: 'https://github.com/arikc79/MusicPortal.Api',
   },
   {
-    title: 'MovieSearch',
+    title: 'Cinema',
     description:
-      'ASP.NET Core MVC застосунок: пошук фільмів через OMDb API з модальними деталями, власна БД із повним CRUD та завантаженням постерів. SQLite, готовий до деплою на Render.',
-    stack: ['C#', 'ASP.NET Core MVC', 'SQLite', 'Entity Framework', 'Bootstrap', 'Docker'],
-    github: 'https://github.com/arikc79/MovieSearch',
+      'Django-застосунок кінотеатру: каталог фільмів з пошуком і фільтрами, бронювання квитків із перевіркою залишку місць та конфліктів сеансів у залі, відгуки, улюблені, профілі з аватарами, ролі (робітник/глядач). REST API на DRF.',
+    stack: ['Python', 'Django', 'DRF', 'SQLite', 'Bootstrap'],
+    github: 'https://github.com/arikc79/cinema',
   },
   {
     title: 'WinCalc',
