@@ -47,6 +47,13 @@ export const projects: Project[] = [
     live: 'https://github.com/arikc79/WinCalc/releases/tag/v1.0',
   },
   {
+    title: 'СЕС Арапова — мобільний застосунок',
+    description:
+      'Android-застосунок для обліку сонячної електростанції: щомісячні показники, автоматичний розрахунок заробітку за зеленим тарифом у грн/євро, статистика з графіками по роках і місяцях, імпорт існуючої БД. Зібрано через EAS Build.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'SQLite', 'expo-sqlite'],
+    github: 'https://github.com/arikc79/ses-arapova-mobile',
+  },
+  {
     title: 'energy-ses',
     description:
       'Застосунок для обліку виробництва сонячної електростанції: введення щомісячних показників, автоматичний розрахунок заробітку за зеленим тарифом, експорт/імпорт БД. Реальні дані, SQLite.',
