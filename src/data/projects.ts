@@ -21,7 +21,7 @@ export const projects: Project[] = [
       'React мобільний застосунок магазину: каталог з фільтрами, кошик із варіантами розмір/колір, оформлення замовлення, VAREL CLUB форма. Аутентифікація та БД через Supabase.',
     stack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'Capacitor'],
     github: 'https://github.com/arikc79/varel-style-app',
-    live: 'https://github.com/arikc79/varel-style-app/releases/tag/v1.0',
+    live: 'https://github.com/arikc79/varel-style-app/releases/tag/v2.0',
   },
   {
     title: 'MusicPortal.Api',
