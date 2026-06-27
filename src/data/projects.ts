@@ -36,6 +36,7 @@ export const projects: Project[] = [
       'Django-застосунок кінотеатру: каталог фільмів з пошуком і фільтрами, бронювання квитків із перевіркою залишку місць та конфліктів сеансів у залі, відгуки, улюблені, профілі з аватарами, ролі (робітник/глядач). REST API на DRF.',
     stack: ['Python', 'Django', 'DRF', 'SQLite', 'Bootstrap'],
     github: 'https://github.com/arikc79/cinema',
+    live: 'https://cinema-1zo1.onrender.com',
   },
   {
     title: 'WinCalc',
