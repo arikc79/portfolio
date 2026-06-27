@@ -26,8 +26,8 @@ export const projects: Project[] = [
   {
     title: 'MusicPortal.Api',
     description:
-      'Full-stack музичний портал: REST API на ASP.NET Core з JWT-аутентифікацією та SHA-256 хешуванням паролів. Адмінпанель на React + Material UI з CRUD пісень/жанрів/користувачів, TanStack Query для стейту, мультимовний інтерфейс (UA/EN).',
-    stack: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'Material UI', 'MS SQL Server', 'JWT', 'TanStack Query'],
+      'Full-stack музичний портал: REST API на ASP.NET Core з JWT-аутентифікацією та SHA-256 хешуванням паролів. Адмінпанель на React + Material UI з CRUD пісень/жанрів/користувачів, завантаження аудіотреків зі стрімінгом, пошук, мультимовний інтерфейс (UA/EN).',
+    stack: ['C#', 'ASP.NET Core', 'React', 'TypeScript', 'Material UI', 'PostgreSQL', 'JWT', 'TanStack Query'],
     github: 'https://github.com/arikc79/MusicPortal.Api',
   },
   {
