@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: 'VAREL Style — мобільний застосунок',
     description:
       'React мобільний застосунок магазину: каталог з фільтрами, кошик із варіантами розмір/колір, оформлення замовлення, VAREL CLUB форма. Аутентифікація та БД через Supabase.',
-    stack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'React Query'],
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'Capacitor'],
     github: 'https://github.com/arikc79/varel-style-app',
     live: 'https://github.com/arikc79/varel-style-app/releases/tag/v1.0',
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     title: 'energy-ses',
     description:
       'Застосунок для обліку виробництва сонячної електростанції: введення щомісячних показників, автоматичний розрахунок заробітку за зеленим тарифом, експорт/імпорт БД. Реальні дані, SQLite.',
-    stack: ['Python', 'tkinter', 'SQLite', 'Matplotlib', 'Pillow'],
+    stack: ['Python', 'tkinter', 'SQLite', 'Pillow'],
     github: 'https://github.com/arikc79/energy-ses-arapova',
     live: 'https://github.com/arikc79/energy-ses-arapova/releases/tag/v1.0',
   },
