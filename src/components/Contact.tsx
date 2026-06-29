@@ -2,6 +2,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const links = [
   { label: 'GitHub', href: 'https://github.com/arikc79', mono: 'github.com/arikc79' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/тарас-арапов-018036409', mono: 'linkedin.com/in/тарас-арапов' },
   { label: 'Telegram', href: 'https://t.me/arikc5', mono: '@arikc5' },
   { label: 'WhatsApp', href: 'https://wa.me/380974103616', mono: '+38 097 410 3616' },
   { label: 'Email', href: 'mailto:arikcarikc4@gmail.com', mono: 'arikcarikc4@gmail.com' },
